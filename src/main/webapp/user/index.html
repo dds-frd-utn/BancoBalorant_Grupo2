@@ -1,0 +1,133 @@
+<!doctype html>
+<html class="no-js" lang="zxx" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Finloans</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!--JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+    <!-- Los iconos tipo Solid de Fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- Nuestro css-->
+    <link rel="stylesheet" type="text/css" href="static/css/index.css" th:href="@{/css/index.css}">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <!-- header-start -->
+    <header>
+        <label id="titleUsuario" >[Bienvenido usuario]</label>
+    </header>
+    <!-- header-end -->
+
+ 
+    
+    <!-- apply_form_area -->
+        <div class="modal-dialog text-center">
+            <div class="col-sm-8 main-section">
+                <div class="modal-content">
+                    <div class="col-12 user-img">
+                        <label id="titleUsuario">Acciones</label>
+                       <div >
+                        <button type="button" class="btn btn-primary btn-lg btn-block" id = "compraBonos">Invertir en Bonos</button>
+                        </div>
+                        <div>
+                            <button type="button" class="btn btn-primary btn-lg btn-block" id = "transferencias">Hacer Transaccion</button>
+                        </div>
+                         <div >
+                            <button type="button" class="btn btn-primary btn-lg btn-block" id = "comprar">Comprar</button>
+                         </div>
+                         <div>
+                            <button type="button" class="btn btn-primary btn-lg btn-block">Ultimos Movimientos</button>
+                         </div>
+                         <div   >
+                            <button type="submit"  class="btn btn-primary"><i class="fas fa-sign-in-alt"></i>Cerrar Cuenta</button>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <div class = "bg-modal">
+        <div class = "modal-content-trans">
+            <div class = "close">+</div>
+            <img src="https://image.flaticon.com/icons/png/512/21/21004.png" alt="" width="60" height="60">
+            <form>
+                <input type="number" placeholder="Cuenta Origen" id  = idOrigen>
+                <input type="number" placeholder="Cuenta Destino" id = "idDestino">
+                <input type="number" placeholder="Monto a Enviar" id = "monto">
+                <a href="" class = "btn-bgform" id = "btnEnviar">Enviar</a>
+            </form>
+        </div>
+    </div>
+
+    <div class = "bg-modal2">
+        <div class = "modal-content-trans">
+            <div class = "close2">+</div>
+            <img src="https://image.flaticon.com/icons/png/512/21/21004.png" alt="" width="60" height="60">
+            <div>LAS VENTAS Y COMPRAS SE LE AGREGARAN UN 23% de IMPUESTOS</div>
+            <form>
+                <input type="number" placeholder="Cuenta Origen" id  = idOrigen>
+                <input type="number" placeholder="Cuenta Destino" id = "idDestino">
+                <input type="number" placeholder="Monto a Enviar" id = "monto">
+                <a href="" class = "btn-bgform" id = "btnComprar">PAGAR</a>
+            </form>
+        </div>
+    </div>
+
+    <div class = "bg-modalbono">
+        <div class = "modal-content-trans">
+            <div class = "close3">+</div>
+            <img src="https://image.flaticon.com/icons/png/512/21/21004.png" alt="" width="60" height="60">
+            <form>
+                <input type="number" placeholder="Ingrese su cuenta" id  = cuenta>
+                <input type="number" placeholder="Seleccione Bono" id = "bono">
+                <input type="number" placeholder="Monto a Enviar" id = "inversion">
+                <a href="" class = "btn-bgform" id = "btnBono">INVERTIR</a>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- link that opens popup -->
+    <!-- JS here -->
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
